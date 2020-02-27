@@ -1,0 +1,68 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+
+<body>
+    <script src="script.js"></script>
+
+
+    <div id="container1">
+
+        <h1>BILL GENERATOR</h1>
+        <div>MENU:
+            <select id="menu">
+                <option value="DOSA">DOSA</option>
+                <option value="IDLLY">IDLLY</option>
+                <option value="CHAPPATHI">CHAPPATHI</option>
+                <option value="PIZZA">PIZZA</option>
+                <option value="NOODLES">NOODLES</option>
+                <option value="BIRIYANI">BIRIYANI</option>
+                
+            </select>
+
+        </div>
+        <div>QUANTITY:
+            <select id="choosequantity">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select> </div>
+
+       
+
+        <ul id="itemlist">
+            
+                ITEM:<p id="item"> </p> 
+            
+                QUANTITY:<p  type="number" id="quantity"> </p>
+                
+                COST:<p type="number" id="cost"> </p>
+        </ul>
+        
+            <ul>
+
+            TOTAL:<p type="number" id="total"> </p>
+            Tax:<p id="tax"></p>
+            Tips:<p id="tips"></p>
+            Discount amount:<p id="discount"></p>
+            Final Bill:<p id="bill"></p>
+          </ul>
+          <button  class="buttonstyle" id="generate" onclick="generatebill()"> Generate Bill </button>
+</div>
+
+
+
+
+</body>
+
+</html>
