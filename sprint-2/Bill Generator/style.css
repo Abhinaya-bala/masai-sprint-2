@@ -1,42 +1,54 @@
-#container1{
-display: flex;
-flex-direction: column;
-justify-content: space-evenly;
-font-style: normal;
-font-size: 30px;
-font-weight: bolder;
-color:blue;
+#container{
 
-text-align: center;
+    display:grid;
+    
+    grid-template-areas: 'a'
+    'b';
 
-
-border:1px solid black;   
-background-image: url("https://images.unsplash.com/photo-1523905330026-b8bd1f5f320e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1358&q=80");
-background-size: cover;
-
-
+    margin: auto;
+    max-width: 800px;
 
 
 }
+h1{
+    text-align: center;
+}
 
+#formcontainer{
+    grid-area: a;
+    padding: 20px;
+}
+#tablecontainer{
+    grid-area: b;
+    padding: 20px;
+}
 .buttonstyle{
 
 width: 150px;
 height:50px;
 background-color: blue;
-color: black;
-justify-content:flex-end;
-align-items: center;
-text-align: center;
-margin: 0 auto;
-margin-bottom: 30px;
-
-
+font-weight: bold;
+font-size:large;
 
 }
 
 
-    
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+ 
+  tfoot td{
+      text-align: right;
+  }  
 
 
 
