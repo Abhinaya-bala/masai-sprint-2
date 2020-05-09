@@ -1,54 +1,62 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BILL GENERATOR</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
 
-
 <body>
-    <h1>BILL GENERATOR</h1>
-    <div id="container">
 
-        <div id="formcontainer">
+    <div class="container mt-5">
+        <h1 class="text-muted text-center font-weight-bold">BILL GENERATOR</h1>
 
-            <div>
-                <label for="menu">Menu</label>
-                <select id="menu"></select><br>
+
+
+
+        <form action="">
+
+            <div class="form-group ">
+                <label for="menu" class="font-weight-bold">Menu</label>
+                <select id="menu" class="form-control"></select>
             </div>
-            <div>
-                <label for="quantity">QUANTITY:</label>
+
+            <div class="form-group mt-3">
+                <label for="quantity" class="font-weight-bold">QUANTITY:</label>
                 <input type="number" id="quantity">
             </div>
-                
-                
-            
-            <button class="buttonstyle" id="generate" onclick="generateBill()"> Generate Bill </button>
+            <button type="button" class="btn btn-primary btn-lg" id="generate" onclick="generateBill()">
+                Generate Bill </button>
+
+        </form>
 
 
-        </div>
-
-        <div id="tablecontainer">
-
-            <table id="table">
-
-                <thead>
-                    <th>ITEM NO</th>
-                    <th>ITEM</th>
-                    <th>QUANTITY</th>
-                    <th>UNIT COST</th>
-                    <th>TOTAL</th>
-                </thead>
-                <tbody id="table_body"></tbody>
-                <tfoot id="table_foot"></tfoot>
 
 
-            </table>
-        </div>
+        <table class="table table-dark mt-5" id="table">
+
+            <thead>
+                <th scope="col">ITEM NO</th>
+                <th scope="col">ITEM</th>
+                <th scope="col">QUANTITY</th>
+                <th scope="col">UNIT COST</th>
+                <th scope="col">TOTAL</th>
+            </thead>
+            <tbody id="table_body"></tbody>
+            <tfoot id="table_foot" class="text-right"></tfoot>
+
+
+        </table>
+
+
+
 
 
     </div>
-
-
     <script src="script.js"></script>
 
 </body>

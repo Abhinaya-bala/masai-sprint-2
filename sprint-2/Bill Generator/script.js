@@ -86,11 +86,11 @@ function generateBill() {
     var wholeTotal = getWholeTotal()
     var discountedPrice = 20 / 100 * wholeTotal
     var vat = 10 / 100 * wholeTotal
-    var finalBill= wholeTotal - discountedPrice + vat
+    var finalBill = wholeTotal - discountedPrice + vat
     var tablefooter = document.querySelector('#table_foot');
 
     tablefooter.innerHTML = '<tr><td colspan="5"> Subtotal: ' + wholeTotal + '</td></tr>' +
-    '<tr><td colspan="5"> Discount (20%): ' + discountedPrice + '</td></tr>' +
-    '<tr><td colspan="5"> VAT (10%) ' + vat+ '</td></tr>' +
-    '<tr><td colspan="5"> total: ' + finalBill+ '</td></tr>'
+        '<tr><td colspan="5"> Discount (20%): ' + discountedPrice + '</td></tr>' +
+        '<tr><td colspan="5"> VAT (10%) ' + vat + '</td></tr>' +
+        '<tr><td colspan="5"> total: ' + finalBill + '</td></tr>'
 }
